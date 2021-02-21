@@ -1,0 +1,71 @@
+section.baby.container {
+  background-color: #fff;
+  box-shadow: $shadow;
+  height: 520px;
+  overflow: hidden;
+  div {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url(../img/baby.jpg);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    height: 470px;
+    width: 95%;
+    margin: 25px auto;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.24);
+    }
+
+    h2 {
+      position: absolute;
+      bottom: 10%;
+      left: 10%;
+      transform: translate(-10%, -10%);
+      font-size: 2rem;
+      letter-spacing: 1px;
+      color: $whitecolor;
+      z-index: 10;
+
+      span {
+        font-family: $font-logo;
+        font-size: 30px;
+        margin-right: 5px;
+        text-transform: uppercase;
+        color: black;
+        letter-spacing: 2px;
+      }
+    }
+    button {
+      position: absolute;
+      bottom: 4%;
+      left: 10%;
+      transform: translateY(-10%);
+      width: 100px;
+      height: auto;
+      font-size: 1.5rem;
+      padding: 5px;
+      line-height: 20px;
+      background-color: transparent;
+      border: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: $whitecolor;
+      z-index: 3;
+      transition: 0.2s linear;
+
+      &:hover {
+        font-size: 1.7rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
