@@ -1,0 +1,39 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  font-family: $font;
+  box-shadow: $shadow;
+  width: 100vw;
+  max-width: 1400px;
+  height: 25vh;
+  margin-top: 50px;
+  h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+  p {
+    font-size: 1.2rem;
+    padding: 5px 0;
+  }
+  .subscribe {
+    form {
+      input {
+        width: 25vw;
+        height: 6vh;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        border: none;
+        border-bottom: 1px solid rgb(99, 99, 99);
+      }
+      &::after {
+        display: block;
+        content: "";
+        width: 25vw;
+        height: 2px;
+        color: black;
+      }
+    }
+  }
+}

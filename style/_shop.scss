@@ -1,26 +1,26 @@
 .shop.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 95vw;
-  height: 500px;
+  @include flex(center, space-between);
+  height: 450px;
   overflow: hidden;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: $shadow;
   margin-bottom: 50px;
+  padding: 15px;
+
+  & > div {
+    width: calc(50% - 8px);
+    height: 420px;
+  }
 
   .her {
     justify-self: center;
     position: relative;
-    margin: 0 15px;
-    width: 640px;
-    height: 430px;
     background-image: url(../img/her.jpg);
     background-position: 25% 75%;
     background-size: cover;
     background-repeat: no-repeat;
+
     &::after {
       content: "";
       position: absolute;
@@ -79,9 +79,6 @@
 
   .him {
     position: relative;
-    margin: 0 15px;
-    width: 640px;
-    height: 430px;
     background-image: url(../img/him.jpg);
     background-position: 25% 75%;
     background-size: cover;

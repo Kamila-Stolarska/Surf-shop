@@ -3,11 +3,13 @@
   margin: 50px auto;
   box-shadow: $shadow;
   background-color: #fff;
-  height: 500px;
+  height: auto;
   overflow: hidden;
+  padding: 15px;
+
   div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     div {
       display: flex;
@@ -27,7 +29,6 @@
       }
     }
     img {
-      margin-top: 2.5%;
       width: 70%;
       height: 90%;
     }
