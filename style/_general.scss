@@ -13,6 +13,9 @@
   max-width: 1140px;
   margin: 0 auto;
 }
+.show {
+  display: block;
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
