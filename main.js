@@ -30,24 +30,7 @@ setInterval(changeSlide, time)
 let hamburger = document.querySelector(".fas.fa-bars");
 const hiddenMenu = document.querySelector("header .hidden-menu");
 
-
 hamburger.addEventListener('click', function() {
-// hiddenMenu.style.display = "block";
  hiddenMenu.classList.toggle("active");
-// if ( x == "1") {
-//     hiddenMenu.style.display = "none";
-// } else {
-//     x--;
-//     hiddenMenu.style.display = "block"
-// }
-
 });
 
-// bars.addEventListener('click', function () {
-//     navList.classList.toggle('active');
-// });
-
-// function showMenu() {
-   
-// } 
-// hamburger.addEventListener('click', showMenu)
