@@ -15,9 +15,12 @@ section.video {
     background-color: rgba(0, 0, 0, 0.24);
   }
 
-  video {
+  .pc-video {
     width: 100% !important;
     height: auto;
+  }
+  .mobile-video {
+    display: none;
   }
 
   h1 {
@@ -64,7 +67,32 @@ section.video {
 @media (min-width: 992px) and (max-width: 1199px) {
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 991px) {
+  section.video {
+    height: 100vh;
+    overflow: hidden;
+    .pc-video {
+      display: none;
+    }
+    .mobile-video {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    button {
+      top: 70%;
+      transform: translate(-50%, -70%);
+      font-size: 3rem;
+      &::after {
+        content: "";
+        width: 110px;
+        height: 2px;
+      }
+    }
+    h1 {
+      font-size: 3rem;
+    }
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -72,9 +100,26 @@ section.video {
 
 @media (max-width: 576px) {
   section.video {
+    .pc-video {
+      display: none;
+    }
+    .mobile-video {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
     button {
-      top: 67%;
-      transform: translate(-50%, -67%);
+      top: 80%;
+      transform: translate(-50%, -80%);
+      font-size: 3rem;
+      &::after {
+        content: "";
+        width: 110px;
+        height: 2px;
+      }
+    }
+    h1 {
+      font-size: 2.2rem;
     }
   }
 }

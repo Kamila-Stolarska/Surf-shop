@@ -26,6 +26,9 @@ footer {
     .fab {
       font-size: 25px;
       padding: 10px 5px 5px 0;
+      &:hover {
+        cursor: pointer;
+      }
     }
     form {
       position: relative;
@@ -64,6 +67,83 @@ footer {
         i {
           font-size: 18px;
           line-height: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    div {
+      margin-left: 15px;
+    }
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    .subscribe {
+      .fab {
+        font-size: 30px;
+        padding: 10px 15px 5px 0;
+        margin-bottom: 20px;
+      }
+      form {
+        width: 90%;
+
+        input {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: none;
+    padding: 0 15px;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    div {
+      margin-left: 15px;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    .subscribe {
+      .fab {
+        font-size: 30px;
+        padding: 10px 15px 5px 0;
+        margin-bottom: 20px;
+      }
+      form {
+        width: 90%;
+
+        input {
+          width: 90%;
         }
       }
     }

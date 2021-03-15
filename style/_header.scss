@@ -1,5 +1,4 @@
 body {
-  min-height: 300vh;
   background-color: rgb(250, 249, 249);
 }
 header {
@@ -22,6 +21,7 @@ header {
         padding: 0 10px;
 
         i {
+          padding: 10px;
           font-size: 1.8rem;
           color: rgb(10, 10, 10);
           cursor: pointer;
@@ -44,5 +44,55 @@ header {
         cursor: default;
       }
     }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  header {
+    height: 80px;
+
+    nav {
+      height: 80px;
+
+      ul {
+        li {
+          padding: 0 20px;
+
+          i {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+  header {
+    nav {
+      div {
+        span {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: none;
+    padding: 0 15px;
   }
 }

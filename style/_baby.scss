@@ -70,3 +70,64 @@ section.baby.container {
     }
   }
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  section.baby.container {
+    div {
+      background-position: -45px 50%;
+
+      h2 {
+        font-size: 4rem;
+
+        span {
+          font-size: 4rem;
+        }
+      }
+      button {
+        width: 200px;
+        font-size: 3rem;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: none;
+    padding: 0 15px;
+  }
+  section.baby.container {
+    div {
+      background-position: -300px 55%;
+
+      h2 {
+        font-size: 23px;
+
+        span {
+          font-size: 3rem;
+        }
+      }
+      button {
+        width: 150px;
+        font-size: 2rem;
+        padding: 5px;
+      }
+    }
+  }
+}

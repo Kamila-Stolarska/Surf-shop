@@ -151,9 +151,52 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    max-width: none;
+    padding: 0 15px;
+  }
   .container {
     max-width: 540px;
+  }
+  .shop.container {
+    height: auto;
+    flex-direction: column;
+
+    & > div {
+      width: 100%;
+    }
+
+    .her {
+      margin-bottom: 15px;
+
+      h2 {
+        font-size: 4rem;
+        span {
+          font-size: 4rem;
+        }
+      }
+      button {
+        padding: 10px;
+        width: 200px;
+        font-size: 3rem;
+      }
+    }
+
+    .him {
+      h2 {
+        font-size: 4rem;
+
+        span {
+          font-size: 4rem;
+        }
+      }
+      button {
+        padding: 10px;
+        width: 200px;
+        font-size: 3rem;
+      }
+    }
   }
 }
 
@@ -161,5 +204,42 @@
   .container {
     max-width: none;
     padding: 0 15px;
+  }
+  .container {
+    max-width: 540px;
+  }
+  .shop.container {
+    height: auto;
+    flex-direction: column;
+
+    & > div {
+      width: 100%;
+    }
+
+    .her {
+      margin-bottom: 15px;
+
+      h2 {
+        font-size: 2.3rem;
+      }
+      button {
+        width: 150px;
+        font-size: 2rem;
+      }
+    }
+
+    .him {
+      h2 {
+        font-size: 2.3rem;
+
+        span {
+          font-size: 3rem;
+        }
+      }
+      button {
+        width: 150px;
+        font-size: 2rem;
+      }
+    }
   }
 }

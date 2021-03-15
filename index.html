@@ -35,38 +35,37 @@
       </nav>
       <div class="hidden-menu">
       <nav class="menu">
-        
-        <li><a href="#">Womens</a> </li>
-        <li><a href="#"> Mens</a></li>
-        <li><a href="#">Kids</a> </li>
-        <li><a href="#">Surf</a> </li>
-        <li><a href="">Sale</a> </li>
-      
+        <li><a href="#womens">Womens</a> </li>
+        <li><a href="#mens"> Mens</a></li>
+        <li><a href="#baby">Kids</a> </li>
+        <li><a href="#surf">Surf</a> </li>
+        <li><a href="#about-us">About us</a> </li>
       </nav>
     </div>
     </header>
     <section class="video">
       <h1>New collection available now</h1>
       <button>shop</button>
-      <video autoplay loop muted src="img/Sea - 24216.mp4"></video>
+      <video class="pc-video" autoplay loop muted src="img/Sea - 24216.mp4"></video>
+      <video class="mobile-video" autoplay loop muted src="img/mobilevideo.mov"></video>
     </section>
-    <section class="shop container">
+    <section class="shop container" id="womens">
       <div class="her">
         <h2><span>Logo</span>Rozie</h2>
         <button>For her</button>
       </div>
-      <div class="him">
+      <div class="him" id="mens">
         <h2><span>Logo</span>Razer</h2>
         <button>For him</button>
       </div>
     </section>
-    <section class="baby container">
+    <section class="baby container" id="baby">
       <div>
         <h2><span>Logo</span>Bambi</h2>
         <button>For baby</button>
       </div>
     </section>
-    <section class="about container">
+    <section class="about container"id="about-us">
       <div>
         <div>
           <h2>About us</h2>
@@ -81,13 +80,12 @@
       </div>
     </section>
 
-    <section class="news container">
+    <section class="news container" id="surf">
+      <div class="text-container">
+        <h2>Coming soon</h2>
+        <h3>Design your board</h3>
+      </div>
       <div class="design-board">
-        <div>
-          <h2>Coming soon</h2>
-          <h3>Design your board</h3>
-          <button>Discover</button>
-        </div>
       </div>
     </section>
     <section class="section-slider">
@@ -98,7 +96,7 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer >
         <div class="about-us">
           <h3>About us</h2>
           <p>Our story</p>
